@@ -1,18 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'./vite-deploy/',
+  base: './vite-deploy/',
   server: {
     hmr: {
       protocol: 'wss',
       mimeTypes: {
-        'application/javascript': ['js', 'mjs'],
-        'text/javascript': ['jsx'],
+        'application/javascript': ['js', 'mjs', 'jsx'], // Include 'jsx' in the 'application/javascript' MIME type
       },
     },
   },
-
 })
