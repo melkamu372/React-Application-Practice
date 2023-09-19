@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './App.css'
-import FunctionalInput from './components/Todo.jsx'
+
 
 function App() {
  
@@ -19,9 +20,8 @@ function App() {
 
   return (
     <>
-    <h1>Our First Test</h1>;
-    <FunctionalInput/>
-<p>{counter} seconds have passed.</p>
+    <h1>Our First Test</h1>
+    <Link to="/React-Application-Practice/profile">Profile page</Link>
 </>
   )
 }

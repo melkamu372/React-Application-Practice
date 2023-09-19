@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Outlet } from "react-router-dom";
 class ClassInput extends Component {
   constructor(props) {
     super(props);
@@ -48,6 +48,7 @@ class ClassInput extends Component {
             <li key={todo}>{todo}</li>
           ))}
         </ul>
+        <Outlet/>
       </section>
     );
   }
