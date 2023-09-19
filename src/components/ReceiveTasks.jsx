@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ReceiveTask = () => {
+const ReceiveTasks = () => {
   return (
     <>
       <p>Hi, I am ReceiveTask ! I love to eat Spinach!</p>
@@ -9,4 +9,4 @@ const ReceiveTask = () => {
   );
 };
 
-export default ReceiveTask;
+export default ReceiveTasks;

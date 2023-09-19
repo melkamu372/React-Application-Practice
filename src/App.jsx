@@ -1,13 +1,8 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './App.css'
-
-
 function App() {
- 
   const [counter, setCounter] = useState(0);
-
   useEffect(() => {
     const key = setInterval(() => {
       setCounter(count => count + 1)

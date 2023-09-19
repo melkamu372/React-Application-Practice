@@ -1,18 +1,23 @@
 import React, { Component } from "react";
-import { Outlet } from "react-router-dom";
-class ClassInput extends Component {
-  constructor(props) {
-    super(props);
+import { useParams } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
+import ReciveTask from './ReceiveTasks.jsx'
+import DefaultTask from './default.jsx'
+import OrderTask from './OrderTask.jsx'
 
-    this.state = {
-      todos: [],
-      inputVal: "",
-    };
+function ClassInput() {
+  // constructor(props) {
+  //   super(props);
+  //   this.name  = useParams();
+  //   this.state = {
+  //     todos: [],
+  //     inputVal: "",
+  //   };
 
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
+  //   this.handleInputChange = this.handleInputChange.bind(this);
+  //   this.handleSubmit = this.handleSubmit.bind(this);
+  // }
+  const { name } = useParams();
   handleInputChange(e) {
     this.setState((state) => ({
       ...state,
@@ -27,6 +32,7 @@ class ClassInput extends Component {
       inputVal: "",
     }));
   }
+
 
   render() {
     return (
@@ -48,7 +54,15 @@ class ClassInput extends Component {
             <li key={todo}>{todo}</li>
           ))}
         </ul>
-        <Outlet/>
+        {/* <Outlet/> */}
+
+        {this.name === "order" ? (
+        <OrderTask />
+      ) : this.name === "receive" ? (
+        <ReciveTask/>
+      ) : (
+        <DefaultTask />
+      )}
       </section>
     );
   }
