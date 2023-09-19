@@ -31,7 +31,7 @@ class ClassInput extends Component {
   render() {
     return (
       <section>
-        <h3>{this.props.name}</h3>
+        <p>{this.props.name}</p>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="task-entry">Enter a task: </label>
           <input
@@ -42,7 +42,7 @@ class ClassInput extends Component {
           />
           <button type="submit">Submit</button>
         </form>
-        <h4>All the tasks!</h4>
+        <p>All the tasks!</p>
         <ul>
           {this.state.todos.map((todo) => (
             <li key={todo}>{todo}</li>

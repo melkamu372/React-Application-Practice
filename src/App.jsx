@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+    <h1>Our First Test</h1>;
     <FunctionalInput/>
 <p>{counter} seconds have passed.</p>
 </>
