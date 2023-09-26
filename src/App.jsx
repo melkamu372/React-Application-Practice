@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './App.css'
+import ContextApp from './context/context.jsx'
 function App() {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
     <h1>Our First Test</h1>
+    <ContextApp/>
     <Link to="/React-Application-Practice/profile">Profile page</Link>
 </>
   )
