@@ -1,35 +1,17 @@
 <br>
 <a name="readme-top"></a>
   <h1 align="center">
- 🎯  React CV Application Generator <a name="about-project"></a>
+ 🎯  React-Application-Practice <a name="about-project"></a>
   </h1>
 
   <p align="">
 
 ![Downloads](https://img.shields.io/github/downloads/melkamu372/CV-Application-generator/total) ![Contributors](https://img.shields.io/github/contributors/melkamu372/CV-Application-generator?color=dark-green) ![Forks](https://img.shields.io/github/forks/melkamu372/CV-Application-generator?style=social) ![Stargazers](https://img.shields.io/github/stars/melkamu372/CV-Application-generator?style=social) ![Issues](https://img.shields.io/github/issues/melkamu372/CV-Application-generator) <a href="https://melkamu372.github.io/CV-Application-generator/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-blue" alt="live" />
 </a>
-
-<div align="">
- <h1></h1>
-  
-![image](https://github.com/melkamu372/CV-Application-generator/assets/47281626/d3d3ae66-56ae-4fb2-b318-c7dc920b5296)
-
-  
-</div>
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-
-  - [💻  Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [👁 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -38,78 +20,58 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
- ##  CV Application Generator Capstone Project <a name="about-project"></a>
+ ##  Welcome to my React Application Practice<a name="about-project"></a>
 
-**CV Application Generator**  is a React project to create a CV.This application will help users to create and customize their CVs in a quick and easy way.  It includes three sections:
-* General information (name, email, phone number)
-* Educational experience (school name, title of study, date of study)
-* Practical experience (company name, position title, main responsibilities of your jobs, date from and until when you worked for that company)
-
-
-## 💻 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-
-<div style="display: flex; flex-wrap: wrap;">
-    <a href="https://reactjs.org/" target="_blank" style="text-decoration: none; margin: 10px;">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.svg" alt="React JS" width="55" height="55" style="border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.3s;">
-  </a>
-
-  <a href="https://getbootstrap.com/" target="_blank" style="text-decoration: none; margin: 10px;">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-4-icon.png" alt="Bootstrap" width="55" height="55" style="border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.3s;">
-  </a>
-  
-  <a href="https://www.w3.org/html/" target="_blank" style="text-decoration: none; margin: 10px;">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.svg" alt="HTML5" width="55" height="55" style="border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.3s;">
-  </a>
-
-  <a href="https://www.w3schools.com/css/" target="_blank" style="text-decoration: none; margin: 10px;">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.svg" alt="CSS3" width="55" height="55" style="border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.3s;">
-  </a>
- 
-</div>
+This page is a repository of my React application practice. I am currently learning React, and I am using these projects to practice and improve my skills. I have included a variety of learning ways that I used, ranging from Setting Up A React Environment to deploying the application. I hope that these projects can be helpful to other React learners, or to anyone who is interested in seeing how React can be used to build different types of applications.
 
 ### Key Features <a name="key-features"></a>
-- **General information**
-- **Educational experience**
-- **Practical experience**
-## 👁 Live Demo <a name="live-demo"></a>
-<a href="https://melkamu372.github.io/CV-Application-generator/" target="_blank">
-<img src="https://img.shields.io/badge/live-%231E77B5.svg?&style=for-the-badge&width=50%" alt="live" />
-</a>
+- **General information how to start**
+- **General information how to build applications**
+- **General information how to deploy**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To simplify our working I use  Vite builds frontend tools for.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-- You need to have NodeJS installed
+- You need to have latest NodeJS installed
 - A Web Browser Google Chrome, Firefox, etc
 - A Code Editor VSCode, Atom etc 
 
-### Setup
+### Setting Up A React Environment
 
-Clone this repository to your desired folder:
+Creating a React app
+Please make sure that you are using the LTS version of Node, otherwise errors may occur. 
 
 ```
- https://github.com/melkamu372/CV-Application-generator.git
+ npm create vite@latest my-first-react-app -- --template react
+```
+If you see the following output, enter y and then press enter:
+
+Need to install the following packages:
+
+  create-vite@4.X.X
+Ok to proceed? (y)
+
+
+Once the command had begun executing, it should output the next steps for you to follow:
+
+ ```
+cd my-first-react-app
+npm install
+npm run dev
+ 
 ```
  
-### Usage     
 
-##### To run the project, execute the following command:  <a style="float: right;margin-right:1.5rem" href="#readme-top">Back to top</a>
+### Setting up a React testing environment
 
-1. npm install 
-2. npm run dev
-3. open by following the link
-
-### Run tests
-
-To run tests, run the following command:
+```
+npm install @testing-library/user-event --save-dev
+```
 
 N/A
 
